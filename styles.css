@@ -156,4 +156,13 @@ align-items: center;
 }
 .mobile-list{
   display: flex;
+  margin-bottom: 55px;
+}
+
+.mobile-icon {
+ transition: transform 1500ms linear; 
+}
+.circle-wrap:hover .mobile-icon {
+ transform: rotate(90deg);
+
 }
