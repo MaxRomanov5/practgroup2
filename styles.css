@@ -269,3 +269,22 @@ body {
   color: #4985ff;
   margin-top: 47px;
 }
+.standarts-icon{
+  fill: var(--accent-color);
+}
+.standarts-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+.standarts-wrap{
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.standarts-calc
+{
+  font-weight: 400;
+    font-size: 36px;
+    line-height:1.47;
+    margin-left: 20px;
+}
