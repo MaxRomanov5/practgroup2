@@ -106,7 +106,14 @@ body {
   border-radius: 30px;
   border: none;
   margin: 0 auto;
+
+  transition: transform 1250ms ease-in;
 }
+
+.btn:hover {
+  transform: translateY(-30px);
+}
+
 .mobail {
   margin-top: 110px;
   margin-bottom: 120px;
