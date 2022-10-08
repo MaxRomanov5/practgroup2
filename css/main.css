@@ -16,4 +16,37 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+}
+
+.auto-wrap {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  gap: 30px;
+}
+
+.auto {
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.audi {
+  background-image: url("../images/audi.jpg");
+}
+
+.doodge {
+  background-image: url("../images/doodge.jpg");
+}
+
+.kia {
+  background-image: url("../images/kia.jpg");
+}
+
+.toyota {
+  background-image: url("../images/toyota.jpg");
+}
+
+.lanos {
+  background-image: url("../images/lanos.jpg");
 }/*# sourceMappingURL=main.css.map */

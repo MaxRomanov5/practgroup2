@@ -14,3 +14,19 @@
 .wrap{
     @include center-flex($ai:baseline );
 }
+.auto-wrap{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    gap: 30px;
+}
+.auto{
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@each $auto in audi,doodge,kia,toyota,lanos {
+    .#{$auto}{
+        background-image: url("../images/#{$auto}.jpg");
+    }
+}
