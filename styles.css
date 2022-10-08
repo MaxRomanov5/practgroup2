@@ -83,6 +83,51 @@ body {
   justify-content: flex-end;
 }
 
+
+/* Toggle */
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .toggle__wrap {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: #323232;
+    border-radius: 30px;
+    transition: background-color 500ms ease-in;
+  }
+  
+  .toggle__button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+  transition: transform 500ms ease-in;
+  }
+
+  .checkbox:checked + .toggle__wrap .toggle__button {
+    transform: translate(40px, -50%);
+  }
+  .checkbox:checked + .toggle__wrap {
+    background-color: green;
+  }
+
+
 .hero {
   padding-top: 320px;
   padding-bottom: 335px;
