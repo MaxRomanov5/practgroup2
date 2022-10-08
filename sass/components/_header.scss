@@ -1,0 +1,8 @@
+
+
+.icon-wrap {
+    & .icon {fill:black;}
+}   
+.icon {
+    .icon-wrap & {fill:black;}
+}
