@@ -85,7 +85,7 @@ body {
 
 
 /* Toggle */
-.checkbox {
+.checkbox, .confirm {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -119,6 +119,22 @@ body {
   transform: translate(0, -50%);
   transition: transform 500ms ease-in;
   }
+
+  .checked {
+    opacity: 0;
+  }
+
+  .unchecked {
+    opacity: 1;
+  }
+
+  .confirm:checked + .icon-check .checked {
+    opacity: 1;
+  }
+
+.confirm:checked+.icon-check .unchecked {
+  opacity: 0;
+}
 
   .checkbox:checked + .toggle__wrap .toggle__button {
     transform: translate(40px, -50%);
