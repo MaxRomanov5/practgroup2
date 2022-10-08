@@ -6,3 +6,11 @@
 .icon {
     .icon-wrap & {fill:black;}
 }
+
+.header-button{
+    @extend %button;
+}
+
+.wrap{
+    @include center-flex($ai:baseline );
+}
