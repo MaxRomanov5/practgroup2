@@ -78,4 +78,19 @@
   .box-wrap {
     margin-bottom: 30px;
   }
+}
+
+.barber {
+  width: 418px;
+  height: 346px;
+}
+@media screen and (min-width: 768px) {
+  .barber {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barber {
+    width: 370px;
+  }
 }/*# sourceMappingURL=main.css.map */
