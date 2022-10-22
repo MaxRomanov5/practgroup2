@@ -83,32 +83,32 @@ body {
   justify-content: flex-end;
 }
 
-
 /* Toggle */
-.checkbox, .confirm {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+.checkbox,
+.confirm {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-  .toggle__wrap {
-    position: relative;
-    width: 80px;
-    height: 40px;
-    background-color: #323232;
-    border-radius: 30px;
-    transition: background-color 500ms ease-in;
-  }
-  
-  .toggle__button {
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.toggle__wrap {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background-color: #323232;
+  border-radius: 30px;
+  transition: background-color 500ms ease-in;
+}
+
+.toggle__button {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -118,31 +118,30 @@ body {
   left: 5px;
   transform: translate(0, -50%);
   transition: transform 500ms ease-in;
-  }
+}
 
-  .checked {
-    opacity: 0;
-  }
-
-  .unchecked {
-    opacity: 1;
-  }
-
-  .confirm:checked + .icon-check .checked {
-    opacity: 1;
-  }
-
-.confirm:checked+.icon-check .unchecked {
+.checked {
   opacity: 0;
 }
 
-  .checkbox:checked + .toggle__wrap .toggle__button {
-    transform: translate(40px, -50%);
-  }
-  .checkbox:checked + .toggle__wrap {
-    background-color: green;
-  }
+.unchecked {
+  opacity: 1;
+}
 
+.confirm:checked + .icon-check .checked {
+  opacity: 1;
+}
+
+.confirm:checked + .icon-check .unchecked {
+  opacity: 0;
+}
+
+.checkbox:checked + .toggle__wrap .toggle__button {
+  transform: translate(40px, -50%);
+}
+.checkbox:checked + .toggle__wrap {
+  background-color: green;
+}
 
 .hero {
   padding-top: 320px;
@@ -330,22 +329,21 @@ body {
   color: #4985ff;
   margin-top: 47px;
 }
-.standarts-icon{
+.standarts-icon {
   fill: var(--accent-color);
 }
-.standarts-list{
+.standarts-list {
   display: flex;
   justify-content: space-evenly;
 }
-.standarts-wrap{
+.standarts-wrap {
   display: flex;
   align-items: center;
   margin-bottom: 17px;
 }
-.standarts-calc
-{
+.standarts-calc {
   font-weight: 400;
-    font-size: 36px;
-    line-height:1.47;
-    margin-left: 20px;
+  font-size: 36px;
+  line-height: 1.47;
+  margin-left: 20px;
 }

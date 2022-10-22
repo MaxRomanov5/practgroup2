@@ -1,0 +1,22 @@
+.adaptive-wrap {
+    width: 480px;
+    height: 600px;
+    @include mq(tab) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 650px;
+    }
+    @include mq(desk) {
+        width: 960px;
+    }
+}
+
+.box-wrap {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    @include mq(mob-only) {
+        margin-bottom: 30px;
+    }
+}
